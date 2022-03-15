@@ -1,38 +1,214 @@
-.App {
+/* same for both listView and GridView */
+.container-header {
+  display: grid;
+  height: 40px;
+
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  gap: 1px;
+  justify-content: space-around;
+
+  padding: 3px;
+}
+.listHeader-itemOne {
+  grid-column: 2 / 3;
+}
+.listHeader-item2 {
+  grid-column: 3 / 11;
+}
+
+.listHeader-item3 {
+  grid-column: 16 / 17;
+}
+
+/* same for both listView and GridView */
+.sortButtonAtoZ {
+  background-image: url("https://icon-library.com/images/arrow-down-icon/arrow-down-icon-6.jpg");
+
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: white;
+}
+/* same for both listView and GridView */
+.sortButtonZtoA {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAABaWlrS0tLW1tZsbGxqampvb29nZ2dra2ve3t7Z2dnQ0ND5+flKSkodHR3z8/N0dHS3t7eEhISNjY3m5uaZmZkICAh7e3umpqasrKxDQ0M5OTm+vr4vLy9WVlaRkZFHHGucAAADaklEQVR4nO3b6W7iQBCF0TZ7IOxLJiyZvP9TDsoMGjDd1Qttd13rfj+RkeuojJ1EwZgW2x96y2rZO+zbPGmLrUbVrfGq9DBNNKvum5YeJ3+PwKqalR4od3Vg54iDJ2DHiDZgp4h2YIeILmBniG5gVQ1KD5cjCdgJogzsANEHhCf6geDEECA0MQwITAwFwhLDgaDEGCAkMQ4ISIwFwhHjgWDEFCAUMQ0IREwFwhDTgSDEV4AQxNeAVdUvDfD1KlA9sf8yUDkxB1A1MQ9QMTEXUC0xH1ApMSdQJVEErnuWF3trKKIInBir0EyAiCJwZBxCM7K8rJPo2aBTCLNF3wbdQpAtejcoCCG2KALf/h7jFpo39cSADYpC9UQROLwdJQnNUDXRf5P5SRSqvt2EbdAnVLzFUKBPqJYYeIkav1Dp7eZdmmr4cKhXaMYKiSHPwVt+ocILVdzguHZwgFDdFoNvMj+FCJVtUQTWNxgoVLXFuA2GChURp9IkzxsMFsrEFv83fC7NYdlguFAkfsybZd0l/QnJCgwXirebX02i7lsJQ9guURMjFLfY1tc0PqOBMUJpi8emSLXcf3hwAaOEwhbtH4H8naKBcUL374uLJjiWztHASKHzQj3nx1hbRANjha4PQls7tD8sJGC00EFs63FxsZ18Lb4lWmgnXnIypGI3mCK0EvMRPB1igSlCC/EzF8Bf/W468b0hRfhEPOUZPqj58uHUI+8bkoS15+KyvR+8r83vnxg7//FpQrO9O3zRKvDa5us2aMgX0BKFZvb738Ffm1cHTmh23G53m7BvnqcKjdlvdtvtUf/X+NKFKFGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiB+F+FGIH4X4UYgfhfhRiN/EIhyVHiprO4twV3qorF0swkvpobI2twhLz5S57RPwu/RIuasDP0oPlL1+TTgrPVD+3h+Ag9LjNNHq/2N/sio9TENNv89X3ukwbfOkfwCAQyeuvvJXvQAAAABJRU5ErkJggg==");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: white;
+}
+
+.goToGridView {
+  background-image: url("https://thumbs.dreamstime.com/b/four-squares-icon-element-web-mobile-concept-apps-thin-line-website-design-development-app-white-background-134542340.jpg");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: white;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+
+  row-gap: 1%;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+
+  font-size: 15px;
   text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 250px;
+  height: 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nameAndImgdiv {
+  padding: 30px;
+  background: #e1d3c7;
+  border-radius: 20px 20px 42px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.locaition-and-icons-div {
+  border-radius: 0px 0px 20px 20px;
+  background: #e1d3c7;
+}
+.city-div {
+  border-radius: 42px 0px 20px 20px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+/* same for both listView and GridView */
+img {
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20000000298023224);
+  overflow: hidden;
+}
+/* same for both listView and GridView */
+.emailImage {
+  width: 20%;
+  height: 20%;
+}
+/* same for both listView and GridView */
+.phoneImage {
+  width: 20%;
+  height: 20%;
+}
+/* All the GridView css */
+.gridV-Header-item1 {
+  grid-column: 6 / 7;
+}
+
+.gridV-Header-item2 {
+  grid-column: 7 / 10;
+}
+.gridV-Header-item3 {
+  grid-column: 13 / 14;
+}
+
+.goToListView {
+  background-image: url("https://image.shutterstock.com/image-vector/expand-menu-icon-jpg-260nw-415201276.jpg");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+.grid-container-GridView {
+  display: grid;
+  grid-template-rows: auto;
+  width: 100%;
+  row-gap: 1%;
+  justify-content: space-evenly;
+  margin-top: "20px";
+}
+
+.grid-item-GridView {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  font-size: 15px;
+  text-align: start;
+  background: #a7b8a8;
+  height: 90px;
+}
+
+.grid-item-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.imgGridView {
+  border-radius: 50%;
+  width: 20%;
+  height: 80%;
+}
+input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyi_CVTmoL1ITHFxQkfLwvj93hcsgA1Olkhg&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+/* 390px-844px Iphone 13 Pro */
+@media only screen and (max-width: 844px) {
+  .list-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin: 2px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  img {
+    width: 70px;
+    height: 70px;
   }
-  to {
-    transform: rotate(360deg);
+  .grid-item {
+    width: 100px;
+    height: 290px;
+  }
+
+  .container-header {
+    grid-template-columns: 100px 100px;
+    margin-bottom: 50px;
+  }
+  .listHeader-itemOne {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .listHeader-item2 {
+    grid-column: 1 / 3;
+  }
+
+  .listHeader-item3 {
+    grid-column: 3 / 4;
+  }
+  .gridV-Header-item3 {
+    grid-column: 3 / 4;
+  }
+  .gridV-Header-item2 {
+    grid-column: 1 / 4;
+  }
+  .gridV-Header-item1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
 }
