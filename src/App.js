@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import GridView from "./pages/GridView";
 import ListView from "./pages/ListView";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [users, setUsers] = React.useState([]);
@@ -15,7 +15,7 @@ function App() {
       const giveUniqId = response.results.map((user) => {
         return {
           ...user,
-          // id: !user.id.value ? user.id.Date.now().toString() : user.id.value,
+
           id: !user.id.value ? user.phone : user.id.value,
         };
       });
@@ -49,7 +49,6 @@ function App() {
           element={
             <GridView
               users={users}
-              setUsers={setUsers}
               inputVal={inputVal}
               setInputVal={setInputVal}
               sortedByfirstName={sortedByfirstName}

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 const GridView = ({
   users,
-  setUsers,
+
   inputVal,
   setInputVal,
   sortedByfirstName,
@@ -14,7 +14,7 @@ const GridView = ({
   };
   return (
     <div>
-      <h4 style={{ marginLeft: "300px" }}> Meet the Team</h4>
+      <h4 className="title-GridView"> Meet the Team</h4>
       <div class="container-header">
         <div className="gridV-Header-item1">
           {" "}

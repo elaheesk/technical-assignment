@@ -1,19 +1,23 @@
+.title-ListView {
+  margin-left: 100px;
+}
+
 /* same for both listView and GridView */
 .container-header {
   display: grid;
   height: 40px;
 
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  gap: 1px;
+
   justify-content: space-around;
 
   padding: 3px;
 }
 .listHeader-itemOne {
-  grid-column: 2 / 3;
+  grid-column: 3 / 4;
 }
 .listHeader-item2 {
-  grid-column: 3 / 11;
+  grid-column: 4 / 11;
 }
 
 .listHeader-item3 {
@@ -54,7 +58,7 @@
 
 .list-container {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 250px 250px 250px;
 
   row-gap: 1%;
   justify-content: space-evenly;
@@ -109,22 +113,28 @@ img {
   width: 20%;
   height: 20%;
 }
-/* All the GridView css */
+/* ALL GRIDVIEW CSS STARTS HERE */
+.title-GridView {
+  margin-left: 300px;
+}
+
 .gridV-Header-item1 {
   grid-column: 6 / 7;
+  margin-left: 60px;
 }
 
 .gridV-Header-item2 {
   grid-column: 7 / 10;
 }
 .gridV-Header-item3 {
-  grid-column: 13 / 14;
+  grid-column: 12 / 13;
+  margin-left: 80px;
 }
 
 .goToListView {
   background-image: url("https://image.shutterstock.com/image-vector/expand-menu-icon-jpg-260nw-415201276.jpg");
   background-repeat: no-repeat;
-  background-size: 50px;
+  background-size: 40px;
   height: 40px;
   width: 40px;
   border: none;
@@ -134,7 +144,7 @@ img {
   grid-template-rows: auto;
   width: 100%;
   row-gap: 1%;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: "20px";
 }
 
@@ -156,7 +166,6 @@ img {
 }
 
 .imgGridView {
-  border-radius: 50%;
   width: 20%;
   height: 80%;
 }
@@ -172,6 +181,9 @@ input[type="text"] {
 
 /* 390px-844px Iphone 13 Pro */
 @media only screen and (max-width: 844px) {
+  .title-ListView {
+    margin-left: 10px;
+  }
   .list-container {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
@@ -182,13 +194,14 @@ input[type="text"] {
     height: 70px;
   }
   .grid-item {
-    width: 100px;
+    width: 120px;
     height: 290px;
   }
 
   .container-header {
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 100px 100px 100px;
     margin-bottom: 50px;
+    margin-left: 40px;
   }
   .listHeader-itemOne {
     grid-column: 1 / 2;
@@ -199,16 +212,30 @@ input[type="text"] {
   }
 
   .listHeader-item3 {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
+    margin-left: 50px;
   }
-  .gridV-Header-item3 {
-    grid-column: 3 / 4;
-  }
-  .gridV-Header-item2 {
-    grid-column: 1 / 4;
+  .title-GridView {
+    margin-left: 10px;
   }
   .gridV-Header-item1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    margin-left: 0px;
+  }
+
+  .gridV-Header-item2 {
+    grid-column: 1 / 3;
+  }
+  .gridV-Header-item3 {
+    grid-column: 2 / 3;
+    margin-left: 50px;
+  }
+
+  .grid-container-GridView {
+    width: 350px;
+  }
+  .imgGridView {
+    width: 50px;
   }
 }

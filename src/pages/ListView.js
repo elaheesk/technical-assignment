@@ -15,8 +15,8 @@ const ListView = ({
 
   return (
     <div>
-      <h4 style={{ marginLeft: "70px" }}> Meet the Team</h4>
-      <div class="container-header">
+      <h4 className="title-ListView"> Meet the Team</h4>
+      <div className="container-header">
         <div className="listHeader-itemOne">
           {" "}
           <button
